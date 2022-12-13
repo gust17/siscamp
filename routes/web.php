@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('novo', function () {
 
-    return view('padrao.base');
+    //return view('padrao.base');
 
     $cidades = \App\Models\Cidade::withCount('escolas')->get();
     $partidos = \App\Models\Partido::withCount('candidatos')->get();
